@@ -1,0 +1,863 @@
+
+ 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        :root{
+            --navbar-hight:59px;
+        }
+
+        .navbaar {
+            /* background-color:rebeccapurple; */
+            /* border: 1px solid black; */
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            /* position: sticky;
+            top: 0%; */
+        }
+
+        header::before {
+            background-image: url(/trvel/bg.png);
+            /* background-color: aqua; */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            content: "";
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            
+        }
+
+        .logo {
+            width: 125px;
+            height: 50px;
+            /* border: 1px solid black; */
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .navlist {
+            justify-content: center;
+            display: flex;
+            /* border: 1px solid black; */
+            list-style: none;
+        }
+
+        .navlist li {
+            /* border: 1px solid black; */
+            margin: 10px 10px;
+            padding: 5px 10px;
+            font-size: 1.2rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .navlist li a{
+            cursor: pointer;
+            /* border: 1px solid black; */
+            color: #fff;
+            margin: 10px 10px;
+            padding: 3px 8px;
+            transition: all 0.50s;
+        }
+
+        .navlist li a:hover{
+            text-decoration: none;
+            background-color: #fff;
+            color:black;
+            border-radius: 10px;
+            transform: scale(0.9)
+        }
+
+        .btn {
+            align-items: center;
+            justify-content: center;
+            margin: 11px 0px;
+        }
+
+        .btn button {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.1rem;
+            background-color: transparent;
+            padding: 3px 8px;
+            color: white;
+            border: 0.8px solid red;
+            border-radius: 5px;
+            transition: all 0.15s;
+            cursor: pointer;
+        }
+
+        .btn button:hover {
+            transform: scale(1.1);
+            color: white;
+            background-color: red;
+            border: 0.8px solid white;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .text {
+            margin: 140px 130px;
+            padding: 10px 35px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2.2rem;
+            color: white;
+            /* border: 1px solid black; */
+            height: 300px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .text .heading {
+            margin-bottom: 10px;
+        }
+
+        .text span {
+            color: yellow;
+        }
+
+        .text button {
+            border: 1px solid white;
+            margin-left: 10px;
+            font-weight: bold;
+            padding: 5px;
+            width: 100px;
+            background-color: yellow;
+            color: black;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.15s;
+        }
+
+        .text button:hover {
+            background-color: white;
+            transform: scale(0.9);
+
+        }
+
+        /* section-1================================================== */
+
+        #section-1 {
+            /* border: 1px solid black; */
+            padding: 15px 20px;
+            height: 100vh;
+
+        }
+
+        #section-1 .sub-heading{
+            margin: 0 auto;
+           text-align: center;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           font-size: 2.5rem;
+        }
+
+        #section-1 .sub-heading span{
+            color: orange;
+        }
+
+
+        .girl {
+            /* border: 1px solid black; */
+            display: flex;
+            width: 100%;
+            height: 600px;
+            align-items: center;
+        }
+
+        .text-headings {
+            width: 600px;
+            border: 1px solid black;
+            margin-left: 140px;
+            justify-content: center;
+            padding: 10px 20px;
+            color: white;
+            background-color: black;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+
+        .text-headings h1 {
+            color: rgb(233, 153, 4);
+            margin-bottom: 10px;
+            font-size: 2rem;
+            font-weight: bolder;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .text-headings h5 {
+            color: rgb(184, 155, 155);
+            margin-bottom: 10px;
+            opacity: 0.8;
+        }
+
+        .text-headings p {
+            font-size: 1.2rem;
+        }
+
+        .g-img {
+            margin-left: 25px;
+            /* border: 1px solid black; */
+            width: 500px;
+        }
+
+        .g-img img {
+            width: 100%;
+        }
+
+        /* our packages======================================================== */
+
+        #cards {
+            /* border: 1px solid black; */
+            /* justify-content: center; */
+            text-align: center;
+            height: 100%;
+            /* margin-bottom: 20px; */
+        }
+
+        #cards .heading {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        #cards span {
+            color: rgb(253, 166, 5);
+        }
+
+        #cards .outercards {
+            display: flex;
+            /* border: 1px solid black; */
+            height: 450px;
+            margin: 15px;
+        }
+
+        #cards .innercards {
+            box-shadow: 3px 5px 5px black;
+            margin: 10px 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 500px;
+
+        }
+
+        #cards .innercards:hover {
+            background-color: rgb(77, 45, 45);
+            color: white;
+            transition: all 0.25s;
+            box-shadow: 2px 2px 2px grey;
+        }
+
+        /* .cards .innercards::before{
+            background: url(/trvel/card_bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom;
+            content: "";
+            position: relative;
+            top: 0px;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        } */
+
+        #cards .innercards img {
+            padding: 5px;
+            width: 100%;
+            height: 250px;
+            transition: all 0.15s;
+        }
+
+        #cards .innercards img:hover {
+            transform: scale(1.01);
+        }
+
+        #cards .innercards:hover h2 {
+            color: orange
+        }
+
+        #cards .innercards .location .fa-solid {
+            color: orange;
+        }
+
+        #cards .txtheading {
+            display: grid;
+            grid-row-gap: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #cards .txtheading button {
+            background-color: orange;
+            margin: 5px auto;
+            width: 70px;
+            cursor: pointer;
+            padding: 2px;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+
+        #cards .txtheading button:hover {
+            font-weight: 600;
+            transition: all 0.10s;
+            transform: scale(1.08);
+            background-color: white;
+        }
+
+        /* images=========================================================== */
+
+        .images {
+            /* border: 1px solid black; */
+            margin: 20px;
+            height: 100vh;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .images h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .images span {
+            color: rgb(230, 230, 30);
+            margin-left: 8px;
+        }
+
+        .images .outerimg {
+            width: 95%;
+            margin: 0 auto;
+            display: grid;
+            grid-gap: 20px 14px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .images .outerimg .innerimg {
+            /* border: 1px solid black; */
+            width: 380px;
+            height: 220px;
+        }
+
+        .images .innerimg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .images .outerimg .innerimg .like {
+            position: relative;
+            left: 0px;
+            top: 35px;
+            width: 25px;
+            opacity: 0;
+            font-size: 20px;
+            transition: all 0.3s;
+        }
+
+        .images .outerimg .innerimg .like:hover {
+            color: rgb(255, 169, 9);
+            cursor: pointer;
+        }
+
+        .images .outerimg .innerimg:hover .like {
+            left: 20px;
+            opacity: 1;
+        }
+
+
+        /* Hotel & Restuarant========================================================= */
+
+        .h-container {
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            /* border: 1px solid black; */
+        }
+
+        .h-container h1 {
+            /* border: 1px solid black; */
+            font-size: 2rem;
+            color: orange;
+            margin-bottom: 22px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .h-container span {
+            color: black;
+        }
+
+        .h-container .h-head {
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .h-container .h-head .h-img {
+            /* border: 3px solid black; */
+            width: 300px;
+            height: 400px;
+        }
+
+        .h-container .h-head .h-img img {
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+        }
+
+
+        .h-container .h-head .h-img .tags a {
+            position: relative;
+            left: 70%;
+            top: -20px;
+            padding: 4px 8px;
+            width: 75px;
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            transition: all 0.15s;
+            cursor: pointer;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .h-container .h-head .h-img .tags a:hover {
+            background-color: orange;
+            border-radius: 10px;
+            transform: scale(0.9);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .h-container .h-head .h-img .tags {
+            display: grid;
+            grid-row-gap: 10px;
+        }
+
+        .h-container .h-head .h-img .tags h2 {
+            margin-top: -15px;
+            color: black;
+        }
+
+        .h-container .h-head .h-img .tags p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .h-container .h-head .h-icon {
+            color: orange;
+        }
+
+
+        /* Our Servicess======================================================== */
+
+        .s-container {
+            margin-top: 30px;
+            justify-content: center;
+            padding: 25px;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .s-container h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .s-container span {
+            color: orange;
+        }
+
+        .s-container .services {
+            display: grid;
+            grid-gap: 15px 15px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .s-container .services .icon {
+            color: orange;
+            font-size: 25px;
+        }
+
+        .s-container .services .s-box {
+            padding: 20px;
+            display: grid;
+            grid-gap: 12px;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        .s-container .services .s-box:hover {
+            border: 1px solid white;
+            box-shadow: 2px 3px 5px grey;
+
+        }
+
+        .s-container .services .s-box h3 {
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .s-container .services .s-box p {
+            font-weight: bold;
+            font-size: small;
+        }
+
+        /* tourist feedback=============================================================== */
+
+        #f-container {
+            width: 100%;
+            height: 100vh;
+            margin-bottom: 20px;
+            justify-content: center;
+            align-items: center;
+            /* border: 5px solid black; */
+        }
+
+        #f-container {
+            position: relative;
+            left: 0;
+            right: 0;
+            background-image: url(/trvel/feedback_bg.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+
+        #f-container h1 {
+            justify-content: center;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2rem;
+            /* margin-bottom: 15px; */
+        }
+
+        #f-container h1 span {
+            color: orange;
+        }
+
+        #f-container .t-feedback {
+            padding: 25px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        #f-container .t-feedback .feedback-box {
+            margin: 0px 15px;
+            /* border: 1px solid black; */
+            padding: 15px;
+            align-items: center;
+            text-align: justify;
+            box-shadow: 0 0 5px black;
+            transition: all 0.50s;
+            cursor: pointer;
+        }
+
+        #f-container .t-feedback .feedback-box .f-icon {
+            color: orange;
+            text-align: center;
+        }
+
+        #f-container .t-feedback .feedback-box p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: small;
+            margin: 20px 0px;
+        }
+
+        #f-container .t-feedback .feedback-box .f-logo {
+            margin: 10px;
+            display: flex;
+        }
+
+        #f-container .t-feedback .feedback-box .f-logo img {
+            width: 150px;
+            border-top-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            box-shadow: 5px 4px 10px black;
+            transition: 0.3s;
+        }
+
+        #f-container .t-feedback .feedback-box:hover .f-logo img {
+            border-top-right-radius: 0;
+        }
+
+        #f-container .t-feedback .feedback-box .f-logo p {
+            margin-left: 20px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s;
+            opacity: 0;
+        }
+
+        #f-container .t-feedback .feedback-box:hover .f-logo p {
+            transform: translateY(-20px);
+            opacity: 1;
+        }
+
+        #f-container .t-feedback .feedback-box .f-bootom-icon {
+            cursor: pointer;
+            float: right;
+            opacity: 0;
+        }
+
+        #f-container .t-feedback .feedback-box:hover .f-bootom-icon {
+            transition: 0.5s;
+            opacity: 1;
+            transform: translateY(-20px);
+        }
+
+        #f-container .t-feedback .feedback-box .f-bootom-icon i:hover {
+            color: orange;
+        }
+
+        /* BOOK NOW================================================================== */
+
+        #b-container {
+            background-image: url(/trvel/t-boy);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100vh;
+        }
+
+        #b-container h1 {
+            text-align: center;
+            font-size: 2rem;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #b-container h1 span {
+            color: orange;
+        }
+
+        #b-container .form {
+            /* border: 1px solid black; */
+            margin: 20px 0px;
+            width: 400px;
+            float: right;
+            margin-right: 50px;
+            padding: 10px;
+        }
+
+        #b-container .form .search {
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        #b-container .form .search p {
+            margin: 5px 0px;
+        }
+
+        #b-container .form .search input {
+            width: 55%;
+            padding: 3px;
+            font-size: 11px;
+            border: 2px solid orange;
+            box-shadow: 0 0 2px rgb(228, 160, 34);
+            outline: none;
+        }
+
+        #b-container .form .search textarea {
+            border: 1.5px solid orange;
+            font-size: 12px;
+            outline: none;
+            box-shadow: 0 0 5px solid orange;
+        }
+
+        #b-container .form .b-btn {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 10px 0px;
+            display: block;
+        }
+
+        #b-container .form .b-btn button {
+            font-weight: bold;
+            border: 1.5px solid white;
+            border-radius: 10px;
+            background-color: orange;
+            color: black;
+            cursor: pointer;
+            padding: 5px 10px;
+            transition: 0.20s;
+            box-shadow: 0 0 10px orange;
+        }
+
+        #b-container .form .b-btn button:hover {
+            font-weight: bold;
+            transform: scale(0.9);
+            color: white;
+            background-color: black;
+            border: 2px solid orange;
+            text-shadow: 5px 3px 10px rgb(40, 241, 241);
+        }
+
+
+        /* subscribe now================================================================================= */
+
+        .subscribe {
+            /* border: 1px solid black; */
+            padding: 20px;
+            margin: 30px 0px;
+
+        }
+
+        .subscribe h1 {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2.5rem;
+        }
+
+        .subscribe h1 span {
+            margin-right: 8px;
+            color: orange;
+        }
+
+        .subscribe p {
+            margin: 15px auto;
+            justify-content: center;
+            /* border: 2px solid black; */
+            width: 600px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: small;
+        }
+
+        .subscribe .s-searchbaar {
+            /* border: 1px solid black; */
+            width: 500px;
+            display: flex;
+            text-align: center;
+            margin: 15px auto;
+        }
+
+        .subscribe .s-searchbaar input {
+            margin-top: 10px;
+            border-radius: 25px;
+            padding: 10px;
+            width: 480px;
+            outline: none;
+            border: 2px solid orange;
+        }
+
+        .subscribe .s-searchbaar input:hover {
+            border: 2px solid brown;
+            box-shadow: 0 0 3px brown;
+        }
+
+
+        .subscribe .s-searchbaar button {
+            position: absolute;
+            margin-top: 15.2px;
+            left: 830px;
+            padding: 5px 5px;
+            border-radius: 25px;
+            cursor: pointer;
+            background-color: orange;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            transition: 0.30s;
+        }
+
+        .subscribe .s-searchbaar button:hover {
+            align-items: center;
+            background-color: brown;
+            transform: scale(0.9.80);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            outline: none;
+            border: 1px solid orange;
+            box-shadow: 0 0 6px orange;
+        }
+
+        /* footer==================================================================== */
+
+        .footer {
+            background-image: url(/trvel/footer_bg.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 200px;
+
+        }
+
+        .footer-main {
+            padding: 10px 15px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            text-align: center;
+        }
+
+        .footer .footer-main .footer-tag {
+            display: grid;
+            grid-row-gap: 3px;
+            text-align: justify;
+        }
+
+        .footer .footer-main .footer-tag h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+
+        .footer .footer-main .footer-tag p {
+            /* border: 1px solid black; */
+            width: fit-content;
+            font-size: 12px;
+            cursor: pointer;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .footer .footer-main .footer-tag p:hover {
+            color: orange;
+            transition: all 0.30s;
+            transform: scale(1.05);
+        }
+
+        .footer .footer-main .footer-tag i {
+            margin-right: 8px;
+            cursor: pointer;
+        }
+
+        .footer .footer-main .footer-tag i:hover {
+            color: orange;
+            transition: 0.15s;
+        }
+
+
+        /* @media screen { */
+            
+        /* @media (max-width: 480px) {
+            .navbaar{
+                width: 100vw;
+                height: 100vh;
+                background-color: black;
+            }
+
+        } */
+            
+        
